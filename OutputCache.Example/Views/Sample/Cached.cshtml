@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cached</title>
+</head>
+<body>
+    <div> 
+        <p>@ViewBag.MyDate</p>
+        @Html.ActionLink("Non Cached Version", "NotCached")
+    </div>
+</body>
+</html>

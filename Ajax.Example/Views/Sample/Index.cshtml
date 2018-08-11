@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+<body>
+    @Ajax.ActionLink("Get A", "GetA", new AjaxOptions()
+{
+    HttpMethod ="Get", InsertionMode = InsertionMode.Replace, UpdateTargetId = "destination"
+})
+
+    @Ajax.ActionLink("Get B", "GetB", new AjaxOptions()
+{
+    HttpMethod ="Get", InsertionMode = InsertionMode.Replace, UpdateTargetId = "destination"
+})
+    <div id="destination">
+    </div>
+</body>
+</html>

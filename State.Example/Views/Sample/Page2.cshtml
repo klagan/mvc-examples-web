@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Page2</title>
+</head>
+<body>
+    <div>
+        @Html.Partial("_Login")
+        <hr />
+        @Html.Action("SamplePartial", "Sample")
+    </div>
+</body>
+</html>
